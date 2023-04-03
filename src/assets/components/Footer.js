@@ -1,5 +1,5 @@
-import logo from './logos/m.g3.png';
-import './Footer.css';
+import logo from '../logos/m.g3.png';
+import '../assets/../css/Footer.css';
 
 function Footer() {
   return (
