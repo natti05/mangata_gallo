@@ -1,0 +1,20 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+.picsix img {
+    width: 100vw;
+    display: flex;
+}
+.picsix h1 {
+    padding: 20px;
+    bottom: -90px;
+    position: absolute;
+}
+
+.picsix p {
+    padding: 20px;
+    bottom: -160px;
+    font-style: italic;
+    position: absolute;
+}

@@ -1,5 +1,5 @@
-import logo from '../assets/../logos/m.g4.png';
-import '../assets/../css/Nav.css';
+import logo from '../assets/../images/m.g2.png';
+import '../assets/../css/FooterNav.css';
 import Homepage from './Homepage';
 import About from './About';
 import Contact from './Contact';
@@ -9,13 +9,15 @@ function Nav() {
   return (
   <section>
     <header>
-      <img src={logo} className="Head-logo" alt="logo" />
+      <div className='logo' >
+         <img src={logo} className="head-logo" alt="logo" />
+      </div>
+      <nav>
+        <Link to="/" className="nav-item">| Home |</Link>
+        <Link to="/about" className="nav-item">| About us |</Link>
+        <Link to="/contact" className="nav-item">| Contact |</Link>
+      </nav>
     </header>
-    <nav>
-      <Link to="/" className="nav-item">Homepage</Link>
-      <Link to="/about" className="nav-item">About us</Link>
-      <Link to="/contact" className="nav-item">Contact</Link>
-	  </nav>
       <Routes> 
         <Route path="/" element={<Homepage />}></Route>
         <Route path="/about" element={<About />}></Route>
