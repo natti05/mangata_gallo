@@ -2,19 +2,24 @@
     margin: 0px;
     padding: 0px;
 }
+.picsix {
+    position: relative;
+}
 .picsix img {
     width: 100vw;
     display: flex;
 }
 .picsix h1 {
-    padding: 20px;
-    bottom: -90px;
+    bottom: 200px;
+    left: 16px;
+    font-size: 2vw;
     position: absolute;
 }
 
 .picsix p {
-    padding: 20px;
-    bottom: -160px;
+    bottom: 150px;
+    left: 16px;
+    font-size: 2vw;
     font-style: italic;
     position: absolute;
 }
