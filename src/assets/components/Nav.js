@@ -13,9 +13,9 @@ function Nav() {
          <img src={logo} className="head-logo" alt="logo" />
       </div>
       <nav>
-        <Link to="/" className="nav-item">| Home |</Link>
-        <Link to="/about" className="nav-item">| About us |</Link>
-        <Link to="/contact" className="nav-item">| Contact |</Link>
+        <Link to="/" className="nav-item">BestSellers</Link>
+        <Link to="/about" className="nav-item">About us</Link>
+        <Link to="/contact" className="nav-item">Contact </Link>
       </nav>
     </header>
       <Routes> 

@@ -1,5 +1,15 @@
-.pics {
-    /* height: 90vh; */
-    width: 90vw;
+#pics {
+    height: 350px;
     overflow: hidden;
+    padding: 16px;
+}
+
+/* .price {
+    padding-left: 16px;
+
+} */
+
+.box {
+    display: flex;
+    flex-wrap: wrap;
 }
