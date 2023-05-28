@@ -24,6 +24,9 @@
     position: absolute;
 }
 
+img.aboutpic {
+    width: 300px;
+}
 /********** Large devices only **********/
 
 @media (min-width: 1200px) {
