@@ -1,5 +1,6 @@
 import pic6 from '../images/pic6.jpg';
 import Card from '../components/Cards';
+import Carousel from '../componets/Carousel';
 
 function Homepage() {
     return (
@@ -13,6 +14,7 @@ function Homepage() {
                     <p>Lorem ipsum</p>
             </div>
             <Card />
+            <Carousel />
         </div>
     );
 
