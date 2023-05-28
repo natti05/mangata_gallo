@@ -19,7 +19,7 @@ function FeedbackForm({onSubmit}) {
     <div>
       <form onSubmit={handleSubmit}>
         <fieldset>
-          <h2>Give us your Feedback:</h2>
+          <h2>Give us your Feedback</h2>
           <div className="Field">
             <label htmlFor="score">Score: {score} ⭐</label>
             <input
