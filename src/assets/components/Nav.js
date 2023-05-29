@@ -9,9 +9,11 @@ function Nav() {
   return (
   <section>
     <header>
+      <Link to="/">
       <div className='logo' >
          <img src={logo} className="head-logo" alt="logo" />
       </div>
+      </Link>
       <nav>
         <Link to="/" className="nav-item">BestSellers</Link>
         <Link to="/about" className="nav-item">About us</Link>
