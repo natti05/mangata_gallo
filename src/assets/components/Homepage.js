@@ -1,14 +1,19 @@
 import pic6 from '../images/pic6.jpg';
-import pic4 from '../images/pic4.jpg';
-import pic7 from '../images/pic7.jpg';
-import pic8 from '../images/pic8.jpg';
+import pic9 from '../images/pic9.jpg';
+import pic11 from '../images/pic11.jpg';
+import pic12 from '../images/pic12.jpg';
+import pic13 from '../images/pic13.jpg';
+import pic14 from '../images/pic14.jpg';
+import pic15 from '../images/pic15.jpg';
 import Card from '../components/Cards';
 import Flickity from 'react-flickity-component';
 import '../assets/../css/Flickity.css';
 
 
 const flickityOptions = {
-    initialIndex: 4
+    initialIndex: 4,
+    autoPlay: 1500,
+    wrapAround: true,
 }
 
 function Carousel() {
@@ -20,16 +25,14 @@ function Carousel() {
       disableImagesLoaded={false} // default false
       reloadOnUpdate // default false
       static // default false
+
     >
-      <img src={pic4} alt=''style={{ marginLeft: 5, marginRight: 5, width: 700 }}/>
-      <img src={pic7} alt=''style={{ marginLeft: 5, marginRight: 5, width: 700 }}/>
-      <img src={pic8} alt=''style={{ marginLeft: 5, marginRight: 5, width: 700 }}/>
-      <img src={pic4} alt=''style={{ marginLeft: 5, marginRight: 5, width: 700 }}/>
-      <img src={pic7} alt=''style={{ marginLeft: 5, marginRight: 5, width: 700 }}/>
-      <img src={pic8} alt=''style={{ marginLeft: 5, marginRight: 5, width: 700 }}/>
-      <img src={pic4} alt=''style={{ marginLeft: 5, marginRight: 5, width: 700 }}/>
-      <img src={pic7} alt=''style={{ marginLeft: 5, marginRight: 5, width: 700 }}/>
-      <img src={pic8} alt=''style={{ marginLeft: 5, marginRight: 5, width: 700 }}/>
+      <img src={pic9} alt=''style={{ marginLeft: 5, marginRight: 5, height: 400 }}/>
+      <img src={pic11} alt=''style={{ marginLeft: 5, marginRight: 5, height: 400 }}/>
+      <img src={pic12} alt=''style={{ marginLeft: 5, marginRight: 5, height: 400 }}/>
+      <img src={pic13} alt=''style={{ marginLeft: 5, marginRight: 5, height: 400 }}/>
+      <img src={pic14} alt=''style={{ marginLeft: 5, marginRight: 5, height: 400 }}/>
+      <img src={pic15} alt=''style={{ marginLeft: 5, marginRight: 5, height: 400 }}/>
     </Flickity>
   )
 };
