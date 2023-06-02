@@ -1,4 +1,4 @@
-import pic6 from '../images/pic6.jpg';
+import pichead from '../images/pichead.jpg';
 import pic9 from '../images/pic9.jpg';
 import pic11 from '../images/pic11.jpg';
 import pic12 from '../images/pic12.jpg';
@@ -41,7 +41,7 @@ function Homepage() {
     return (
         <div>
             <div className='picsix' >
-                <img src={pic6} className="" alt="" />
+                <img src={pichead} className="" alt="" />
                     <h1>Lorem ipsum dolor sit amet,<br/>
                         consectetur adipiscing elit, <br/>
                         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
