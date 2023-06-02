@@ -3,21 +3,21 @@
     padding: 0px;
 }
 
-.picsix {
+.pichead {
     position: relative;
 }
-.picsix img {
+.pichead img {
     width: 100vw;
     display: flex;
 }
-.picsix h1 {
+.pichead h1 {
     bottom: 200px;
     left: 16px;
     font-size: 2vw;
     position: absolute;
 }
 
-.picsix p {
+.pichead p {
     bottom: 150px;
     left: 16px;
     font-size: 2vw;
@@ -27,6 +27,15 @@
 
 img.aboutpic {
     width: 300px;
+}
+.boxpage {
+    display: flex;
+    margin-top: 10px;
+
+}
+.phrase {
+    margin: 30px;
+    border: solid 1px black;
 }
 /********** Large devices only **********/
 

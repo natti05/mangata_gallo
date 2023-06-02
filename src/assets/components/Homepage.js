@@ -5,15 +5,16 @@ import pic12 from '../images/pic12.jpg';
 import pic13 from '../images/pic13.jpg';
 import pic14 from '../images/pic14.jpg';
 import pic15 from '../images/pic15.jpg';
+import picbody from '../images/picbody.jpg';
 import Card from '../components/Cards';
 import Flickity from 'react-flickity-component';
 import '../assets/../css/Flickity.css';
 
 
 const flickityOptions = {
-    initialIndex: 4,
-    autoPlay: 1500,
-    wrapAround: true,
+  initialIndex: 4,
+  autoPlay: 1500,
+  wrapAround: true,
 }
 
 function Carousel() {
@@ -39,22 +40,33 @@ function Carousel() {
 
 function Homepage() {
     return (
-        <div>
-            <div className='picsix' >
-                <img src={pichead} className="" alt="" />
-                    <h1>Lorem ipsum dolor sit amet,<br/>
-                        consectetur adipiscing elit, <br/>
-                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                    </h1>
-                    <p>Lorem ipsum</p>
-            </div>
-            <div style={{ paddingTop: 100 }}>
-                <h2>Bestseller</h2>
-                <Carousel />
-            </div>
-                <h2 style={{ paddingTop: 100 }}>Summer Collection</h2>
-            <Card />
+      <div>
+        <div className='pichead' >
+          <img src={pichead} className="" alt="" />
+          <h1>Lorem ipsum dolor sit amet,<br/>
+              consectetur adipiscing elit, <br/>
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+          </h1>
+            <p>Lorem ipsum</p>
         </div>
+        <div style={{ padding: 80 }}>
+          <h2>Bestseller</h2>
+          <Carousel />
+        </div>
+        <div className='boxpage'>
+          <div>
+            <img src={picbody} alt="" style={{height: 500, marginTop: 10}}></img>
+          </div>
+          <div>
+            <p className='phrase'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+        </div>
+        <h2 style={{ paddingTop: 100 }}>Summer Collection</h2>
+        <Card />
+      </div>
     );
 
 }
