@@ -20,66 +20,100 @@ function Card() {
 
       "image": pic0,
       "price": "9Euros",
+      "name": "necklace",
       "id": 1
     },{
     
     "image": pic1,
     "price": "11Euros",
+    "name": "earring",
     "id": 2
   },
   {
     "image": pic2,
     "price": "16Euros",
+    "name": "earring",
     "id": 3
   },
   {
     "image": pic3,
     "price": "9Euros",
+    "name": "ring",
     "id": 4
   },
   {
     "image": pic4,
     "price": "9Euros",
+    "name": "earring",
     "id": 5
   },
   {
     "image": pic8,
     "price": "9Euros",
+    "name": "bracelet",
     "id": 6
   },
   {
     "image": pic9,
     "price": "9Euros",
+    "name": "earring",
     "id": 7
   },
   {
     "image": pic11,
     "price": "9Euros",
+    "name": "earring",
     "id": 8
   },
   {
     "image": pic12,
     "price": "9Euros",
+    "name": "ring",
     "id": 9
   },{
     "image": pic13,
     "price": "9Euros",
+    "name": "ring",
     "id": 10
   },{
     "image": pic14,
     "price": "9Euros",
+    "name": "necklace",
     "id": 11
   },
   {
     "image": pic15,
     "price": "9Euros",
+    "name": "ring",
     "id": 12
   },{
     "image": pic16,
     "price": "9Euros",
+    "name": "earring",
     "id": 13
   },]
-  const single = photos.map((photo) =>(
+  
+  const filtered = photos.filter(photo => {
+    return photo.name === "earring";
+  });
+
+    // <div>
+    //   {filtered.map(photo => {
+    //     return (
+    //       <div key={photo.id}>
+    //         <h2>name: {photo.name}</h2>
+    //         <img src={photo.image} alt={photo.price} id='pics' style={{width: 300, height: 300}}/>
+      
+        
+    //       </div>
+    //     );
+    //   })}
+    // </div>
+
+
+  
+
+  const single = filtered.map((photo) =>(
     <div key={photo.id}>
       <img src={photo.image} alt={photo.price} id='pics' style={{width: 300, height: 300}}/>
       {/* <p className='price'>{photo.price}</p> */}

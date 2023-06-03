@@ -1,19 +1,16 @@
 import logo from '../assets/../images/m.g2.png';
 import '../assets/../css/FooterNav.css';
-import Homepage from './Homepage';
-import About from './About';
-import Contact from './Contact';
+import Homepage from '../components/Homepage';
+import About from '../components/About';
+import Contact from '../components/Contact';
 import Card from '../components/Cards';
 import { Routes, Route, Link } from "react-router-dom";
 
 function BestSellers() {
-
   return <div><Card/></div>;
 }
-
 function Earrings() {
-
-  return <div><Card/></div>;
+  return <div><Card /></div>;
 }
 function Bracelets() {
 
