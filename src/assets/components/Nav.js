@@ -3,26 +3,190 @@ import '../assets/../css/FooterNav.css';
 import Homepage from '../components/Homepage';
 import About from '../components/About';
 import Contact from '../components/Contact';
-import Card from '../components/Cards';
+// import Card from '../components/Cards';
+import React,{useState,useEffect} from 'react';
 import { Routes, Route, Link } from "react-router-dom";
 
-function BestSellers() {
-  return <div><Card/></div>;
-}
+  const BestSellers = () =>{
+    const [data,setData]=useState([]);
+  const getData=()=>{
+    fetch('../Photos.json'
+    ,{
+      headers : { 
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+       }
+     }
+    )
+      .then(function(response){
+        console.log(response)
+        return response.json();
+      })
+      .then(function(myJson) {
+        console.log(myJson);
+        setData(myJson)
+      });
+  }
+  
+  const filtered = data.filter(data => {
+    return data.description === "bestseller";
+  }); 
+
+  useEffect(()=>{
+    getData()
+  },[])
+  return (
+    <div className="">
+     {
+       data && data.length>0 && filtered.map((item)=><div><p>{item.name}</p> <img src={`${item.url}`} alt=""style={{ marginLeft: 5, marginRight: 5, height: 400 }}></img></div>)
+     }
+    </div>
+  );
+    }
 function Earrings() {
-  return <div><Card /></div>;
+  const [data,setData]=useState([]);
+  const getData=()=>{
+    fetch('../Photos.json'
+    ,{
+      headers : { 
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+       }
+     }
+    )
+      .then(function(response){
+        console.log(response)
+        return response.json();
+      })
+      .then(function(myJson) {
+        console.log(myJson);
+        setData(myJson)
+      });
+  }
+  
+  const filtered = data.filter(data => {
+    return data.name === "earring";
+  }); 
+
+  useEffect(()=>{
+    getData()
+  },[])
+  return (
+    <div className="">
+     {
+       data && data.length>0 && filtered.map((item)=><div><p>{item.name}</p> <img src={`${item.url}`} alt=""style={{ marginLeft: 5, marginRight: 5, height: 400 }}></img></div>)
+     }
+    </div>
+  );
 }
 function Bracelets() {
 
-  return <div><Card/></div>;
+  const [data,setData]=useState([]);
+  const getData=()=>{
+    fetch('../Photos.json'
+    ,{
+      headers : { 
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+       }
+     }
+    )
+      .then(function(response){
+        console.log(response)
+        return response.json();
+      })
+      .then(function(myJson) {
+        console.log(myJson);
+        setData(myJson)
+      });
+  }
+  
+  const filtered = data.filter(data => {
+    return data.name === "bracelet";
+  }); 
+
+  useEffect(()=>{
+    getData()
+  },[])
+  return (
+    <div className="">
+     {
+       data && data.length>0 && filtered.map((item)=><div><p>{item.name}</p> <img src={`${item.url}`} alt=""style={{ marginLeft: 5, marginRight: 5, height: 400 }}></img></div>)
+     }
+    </div>
+  );
 }
 function Necklaces() {
+  const [data,setData]=useState([]);
+  const getData=()=>{
+    fetch('../Photos.json'
+    ,{
+      headers : { 
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+       }
+     }
+    )
+      .then(function(response){
+        console.log(response)
+        return response.json();
+      })
+      .then(function(myJson) {
+        console.log(myJson);
+        setData(myJson)
+      });
+  }
+  
+  const filtered = data.filter(data => {
+    return data.name === "necklace";
+  }); 
 
-  return <div><Card/></div>;
+  useEffect(()=>{
+    getData()
+  },[])
+  return (
+    <div className="">
+     {
+       data && data.length>0 && filtered.map((item)=><div><p>{item.name}</p> <img src={`${item.url}`} alt=""style={{ marginLeft: 5, marginRight: 5, height: 400 }}></img></div>)
+     }
+    </div>
+  );
 }
 function Rings() {
+  const [data,setData]=useState([]);
+  const getData=()=>{
+    fetch('../Photos.json'
+    ,{
+      headers : { 
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+       }
+     }
+    )
+      .then(function(response){
+        console.log(response)
+        return response.json();
+      })
+      .then(function(myJson) {
+        console.log(myJson);
+        setData(myJson)
+      });
+  }
+  
+  const filtered = data.filter(data => {
+    return data.name === "ring";
+  }); 
 
-  return <div><Card/></div>;
+  useEffect(()=>{
+    getData()
+  },[])
+  return (
+    <div className="">
+     {
+       data && data.length>0 && filtered.map((item)=><div><p>{item.name}</p> <img src={`${item.url}`} alt=""style={{ marginLeft: 5, marginRight: 5, height: 400 }}></img></div>)
+     }
+    </div>
+  );
 }
 
 function Nav() {
