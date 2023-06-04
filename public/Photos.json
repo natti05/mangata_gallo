@@ -2,62 +2,68 @@
     "url": "../imagesJson/pic0.jpg",
     "price": "9Euros",
     "name": "necklace",
-    "description": "bestseller",
+    "description": "collection",
     "id":"1"
   },{
   "url": "../imagesJson/pic1.jpg",
   "price": "11Euros",
   "name": "earring",
+  "description": "collection",
   "id": "2"
 },
 {
   "url": "../imagesJson/pic2.jpg",
   "price": "16Euros",
   "name": "earring",
-  "description": "bestseller",
+  "description": "collection",
   "id": "3"
 },
 {
   "url": "../imagesJson/pic3.jpg",
   "price": "9Euros",
   "name": "ring",
+  "description": "collection",
   "id": "4"
 },
 {
   "url": "../imagesJson/pic4.jpg",
   "price": "9Euros",
   "name": "earring",
-  "description": "bestseller",
+  "description": "collection",
   "id": "5"
 },
 {
   "url": "../imagesJson/pic8.jpg",
   "price": "9Euros",
   "name": "bracelet",
+  "description": "collection",
   "id": "6"
 },
 {
   "url": "../imagesJson/pic9.jpg",
   "price": "9Euros",
   "name": "earring",
+  "description":"bestseller",
   "id": "7"
 },
 {
   "url": "../imagesJson/pic11.jpg",
   "price": "9Euros",
   "name": "earring",
+  "description":"bestseller",
   "id": "8"
 },
 {
   "url":" ../imagesJson/pic12.jpg",
   "price": "9Euros",
   "name": "ring",
+  "description": "bestseller",
   "id": "9"
 },{
   "url": "../imagesJson/pic13.jpg",
   "price": "9Euros",
   "name": "ring",
-
+  "description": "bestseller",
   "id": "10"
 },{
   "url": "../imagesJson/pic14.jpg",
@@ -76,5 +82,6 @@
   "url": "../imagesJson/pic16.jpg",
   "price": "9Euros",
   "name": "earring",
+  "description": "collection",
   "id": "13"
 }]
