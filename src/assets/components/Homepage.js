@@ -1,4 +1,4 @@
-import pichead from '../images/pichead.jpg';
+import main from '../images/pichead.jpg';
 import pic9 from '../images/pic9.jpg';
 import pic11 from '../images/pic11.jpg';
 import pic12 from '../images/pic12.jpg';
@@ -42,21 +42,21 @@ function Carousel() {
 function Homepage() {
     return (
       <div>
-        <div className='pichead' >
-          <img src={pichead} className="" alt="" />
+        <div className='main' >
+          <img src={main} className="" alt="" />
           <h1>Lorem ipsum dolor sit amet,<br/>
               consectetur adipiscing elit, <br/>
               sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
           </h1>
             <p>Lorem ipsum</p>
         </div>
-        <div style={{ padding: 80 }}>
+        <div className='bestsellerbox'>
           <h2>Bestseller</h2>
           <Carousel />
         </div>
         <div className='boxpage'>
           <div>
-            <img src={picbody} alt="" style={{height: 500, marginTop: 10}}></img>
+            <img src={picbody} alt="" id='picbody'></img>
           </div>
           <div>
             <p className='phrase'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 

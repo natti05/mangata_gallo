@@ -28,13 +28,13 @@ export default function Nav() {
       </nav>
     </header>
       <Routes> 
+        <Route path="/" element={<Homepage />}></Route>
         <Route path="/collection" element={<Card />} />
         <Route path="/bestSellers" element={<BestSellers />} />
         <Route path="/earrings" element={<Earrings />} />
         <Route path="/bracelets" element={<Bracelets/>} />
         <Route path="/necklaces" element={<Necklaces />} />
         <Route path="/rings" element={<Rings />} />
-        <Route path="/" element={<Homepage />}></Route>
         <Route path="/about" element={<About />}></Route>
         <Route path="/contact" element={<Contact />}></Route>
       </Routes>
@@ -43,7 +43,7 @@ export default function Nav() {
   );
 }
 
-  const BestSellers = () =>{
+function BestSellers() {
     const [data,setData]=useState([]);
   const getData=()=>{
     fetch('../Photos.json'
@@ -65,7 +65,7 @@ export default function Nav() {
   }
   
   const filtered = data.filter(data => {
-    return data.description === "bestseller";
+    return data.type === "bestseller";
   }); 
 
   useEffect(()=>{
@@ -74,11 +74,16 @@ export default function Nav() {
   return (
     <div className="box">
      {
-       data && data.length>0 && filtered.map((item)=><div><p>{item.name}</p> <img src={`${item.url}`} alt="" id='pics'></img></div>)
+       data && data.length>0 && filtered.map((item)=>
+       <div>
+          <img src={`${item.url}`} alt="" id='pics'></img>
+          <p>{item.name}</p> 
+          <b>{item.price}</b>
+       </div>)
      }
     </div>
   );
-    }
+}
 function Earrings() {
   const [data,setData]=useState([]);
   const getData=()=>{
@@ -101,7 +106,7 @@ function Earrings() {
   }
   
   const filtered = data.filter(data => {
-    return data.name === "earring";
+    return data.id === "earring";
   }); 
 
   useEffect(()=>{
@@ -110,7 +115,12 @@ function Earrings() {
   return (
     <div className="box">
      {
-       data && data.length>0 && filtered.map((item)=><div><p>{item.name}</p> <img src={`${item.url}`} alt="" id='pics'></img></div>)
+       data && data.length>0 && filtered.map((item)=>
+       <div>
+          <img src={`${item.url}`} alt="" id='pics'></img>
+          <p>{item.name}</p> 
+          <b>{item.price}</b>
+       </div>)
      }
     </div>
   );
@@ -138,7 +148,7 @@ function Bracelets() {
   }
   
   const filtered = data.filter(data => {
-    return data.name === "bracelet";
+    return data.id === "bracelet";
   }); 
 
   useEffect(()=>{
@@ -147,7 +157,12 @@ function Bracelets() {
   return (
     <div className="box">
      {
-       data && data.length>0 && filtered.map((item)=><div><p>{item.name}</p> <img src={`${item.url}`} alt="" id='pics'></img></div>)
+       data && data.length>0 && filtered.map((item)=>
+       <div>
+          <img src={`${item.url}`} alt="" id='pics'></img>
+          <p>{item.name}</p> 
+          <b>{item.price}</b>
+       </div>)
      }
     </div>
   );
@@ -174,7 +189,7 @@ function Necklaces() {
   }
   
   const filtered = data.filter(data => {
-    return data.name === "necklace";
+    return data.id === "necklace";
   }); 
 
   useEffect(()=>{
@@ -183,7 +198,12 @@ function Necklaces() {
   return (
     <div className="box">
      {
-       data && data.length>0 && filtered.map((item)=><div><p>{item.name}</p> <img src={`${item.url}`} alt="" id='pics'></img></div>)
+       data && data.length>0 && filtered.map((item)=>
+       <div> 
+          <img src={`${item.url}`} alt="" id='pics'></img>
+          <p>{item.name}</p> 
+          <b>{item.price}</b>
+       </div>)
      }
     </div>
   );
@@ -210,7 +230,7 @@ function Rings() {
   }
   
   const filtered = data.filter(data => {
-    return data.name === "ring";
+    return data.id === "ring";
   }); 
 
   useEffect(()=>{
@@ -219,7 +239,12 @@ function Rings() {
   return (
     <div className="box">
      {
-       data && data.length>0 && filtered.map((item)=><div><p>{item.name}</p> <img src={`${item.url}`} alt="" id='pics'></img></div>)
+       data && data.length>0 && filtered.map((item)=>
+       <div>
+          <img src={`${item.url}`} alt="" id='pics'></img>
+          <p>{item.name}</p> 
+          <b>{item.price}</b>
+       </div>)
      }
     </div>
   );

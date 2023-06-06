@@ -2,45 +2,74 @@
     margin: 0px;
     padding: 0px;
 }
-
-.pichead {
+/* Homepage */
+.main {
     position: relative;
 }
-.pichead img {
+.main img {
     width: 100vw;
     display: flex;
 }
-.pichead h1 {
-    bottom: 200px;
+.main h1 {
+    bottom: 30px;
     left: 16px;
     font-size: 2vw;
     position: absolute;
 }
 
-.pichead p {
-    bottom: 150px;
+.main p {
+    bottom: 10px;
     left: 16px;
     font-size: 2vw;
     font-style: italic;
     position: absolute;
 }
+/* Carousel box */
+.bestsellerbox {
+    /* padding: 10px; */
+}
+/*  */
+.boxpage {
+     margin-top: 10px;
 
+}
+
+#picbody {
+    border: solid 1px black;
+    height: 500px;
+    margin: 50px;
+}
+.phrase {
+    text-align: center;
+    margin: 10px;
+}
+
+/* About */
 img.aboutpic {
     width: 300px;
 }
-.boxpage {
+
+/* product box */
+#pics {
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    padding: 16px;
+}
+
+.box {
     display: flex;
-    margin-top: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
 
 }
-.phrase {
-    margin: 30px;
-    border: solid 1px black;
-}
+/* end */
+
 /********** Large devices only **********/
 
 @media (min-width: 1200px) {
-  
+    
+
 }
 
 
