@@ -29,12 +29,12 @@ function Carousel() {
       static // default false
 
     >
-      <img src={pic9} alt=''style={{ marginLeft: 5, marginRight: 5, height: 400 }}/>
-      <img src={pic11} alt=''style={{ marginLeft: 5, marginRight: 5, height: 400 }}/>
-      <img src={pic12} alt=''style={{ marginLeft: 5, marginRight: 5, height: 400 }}/>
-      <img src={pic13} alt=''style={{ marginLeft: 5, marginRight: 5, height: 400 }}/>
-      <img src={pic14} alt=''style={{ marginLeft: 5, marginRight: 5, height: 400 }}/>
-      <img src={pic15} alt=''style={{ marginLeft: 5, marginRight: 5, height: 400 }}/>
+      <img src={pic9} alt='' id='carouselimg'/>
+      <img src={pic11} alt=''id='carouselimg'/>
+      <img src={pic12} alt=''id='carouselimg'/>
+      <img src={pic13} alt=''id='carouselimg'/>
+      <img src={pic14} alt=''id='carouselimg'/>
+      <img src={pic15} alt=''id='carouselimg'/>
     </Flickity>
   )
 };

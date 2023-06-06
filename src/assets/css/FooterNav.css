@@ -3,8 +3,9 @@
   justify-content: center;
 }
 .head-logo {
-  padding: 2vw;
-  width: 80vw;
+  margin: 10px;
+  padding: 5vw;
+  width: 65vw;
 }
 nav {
 display: flex;
