@@ -3,6 +3,7 @@ import '../assets/../css/FooterNav.css';
 import Homepage from '../components/Homepage';
 import About from '../components/About';
 import Contact from '../components/Contact';
+import Card from '../components/Cards';
 import React,{useState,useEffect} from 'react';
 import { Routes, Route, Link } from "react-router-dom";
 
@@ -16,6 +17,7 @@ export default function Nav() {
       </div>
       </Link>
       <nav>
+      <Link to="/collection" className="nav-item">Summer Collection</Link>
         <Link to="/bestSellers" className="nav-item">BestSellers</Link>
         <Link to="/earrings" className="nav-item">Earrings</Link>
         <Link to="/bracelets" className="nav-item">Bracelets</Link>
@@ -26,6 +28,7 @@ export default function Nav() {
       </nav>
     </header>
       <Routes> 
+        <Route path="/collection" element={<Card />} />
         <Route path="/bestSellers" element={<BestSellers />} />
         <Route path="/earrings" element={<Earrings />} />
         <Route path="/bracelets" element={<Bracelets/>} />
@@ -69,9 +72,9 @@ export default function Nav() {
     getData()
   },[])
   return (
-    <div className="">
+    <div className="box">
      {
-       data && data.length>0 && filtered.map((item)=><div><p>{item.name}</p> <img src={`${item.url}`} alt=""style={{ marginLeft: 5, marginRight: 5, height: 400 }}></img></div>)
+       data && data.length>0 && filtered.map((item)=><div><p>{item.name}</p> <img src={`${item.url}`} alt="" id='pics'></img></div>)
      }
     </div>
   );
@@ -105,9 +108,9 @@ function Earrings() {
     getData()
   },[])
   return (
-    <div className="">
+    <div className="box">
      {
-       data && data.length>0 && filtered.map((item)=><div><p>{item.name}</p> <img src={`${item.url}`} alt=""style={{ marginLeft: 5, marginRight: 5, height: 400 }}></img></div>)
+       data && data.length>0 && filtered.map((item)=><div><p>{item.name}</p> <img src={`${item.url}`} alt="" id='pics'></img></div>)
      }
     </div>
   );
@@ -142,9 +145,9 @@ function Bracelets() {
     getData()
   },[])
   return (
-    <div className="">
+    <div className="box">
      {
-       data && data.length>0 && filtered.map((item)=><div><p>{item.name}</p> <img src={`${item.url}`} alt=""style={{ marginLeft: 5, marginRight: 5, height: 400 }}></img></div>)
+       data && data.length>0 && filtered.map((item)=><div><p>{item.name}</p> <img src={`${item.url}`} alt="" id='pics'></img></div>)
      }
     </div>
   );
@@ -178,9 +181,9 @@ function Necklaces() {
     getData()
   },[])
   return (
-    <div className="">
+    <div className="box">
      {
-       data && data.length>0 && filtered.map((item)=><div><p>{item.name}</p> <img src={`${item.url}`} alt=""style={{ marginLeft: 5, marginRight: 5, height: 400 }}></img></div>)
+       data && data.length>0 && filtered.map((item)=><div><p>{item.name}</p> <img src={`${item.url}`} alt="" id='pics'></img></div>)
      }
     </div>
   );
@@ -214,9 +217,9 @@ function Rings() {
     getData()
   },[])
   return (
-    <div className="">
+    <div className="box">
      {
-       data && data.length>0 && filtered.map((item)=><div><p>{item.name}</p> <img src={`${item.url}`} alt=""style={{ marginLeft: 5, marginRight: 5, height: 400 }}></img></div>)
+       data && data.length>0 && filtered.map((item)=><div><p>{item.name}</p> <img src={`${item.url}`} alt="" id='pics'></img></div>)
      }
     </div>
   );

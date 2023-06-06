@@ -8,6 +8,7 @@ import pic15 from '../images/pic15.jpg';
 import picbody from '../images/picbody.jpg';
 import Card from '../components/Cards';
 import Flickity from 'react-flickity-component';
+import { Link } from "react-router-dom";
 import '../assets/../css/Flickity.css';
 
 
@@ -65,7 +66,8 @@ function Homepage() {
           </div>
         </div>
         <h2 style={{ paddingTop: 100 }}>Summer Collection</h2>
-        <Card />
+        <Card /> <Link to="/bestSellers" className="nav-item"><p>More:</p></Link>
+
       </div>
     );
 

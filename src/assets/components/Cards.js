@@ -58,7 +58,7 @@ function Card() {
 
   const single = photos.map((photo) =>(
     <div key={photo.id}>
-      <img src={photo.image} alt={photo.price} id='pics' style={{width: 300, height: 300}}/>
+      <img src={photo.image} alt={photo.price} id='pics'/>
       {/* <p className='price'>{photo.price}</p> */}
    </div> 
   ))
