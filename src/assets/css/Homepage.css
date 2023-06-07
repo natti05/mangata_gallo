@@ -1,0 +1,96 @@
+/* Homepage */
+.main img {
+    position: relative;
+    width: 100vw;
+    display: flex;
+    margin: 0px 0 50px 0;
+}
+.main h1 {
+    bottom: 40px;
+    left: 16px;
+    position: absolute;
+}
+
+.main p {
+    bottom: 10px;
+    left: 16px;
+    font-style: italic;
+    position: absolute;
+}
+/* carousel */
+#carouselimg {
+    margin-left: 5px;
+    margin-right: 5px;
+    height: 200px;
+}
+
+/* section after the carousel */
+.boxpage {
+    margin-top: 10px;
+}
+
+#picbody {
+    border: solid 1px black;
+    height: 300px;
+    width: 250px;
+    margin: 50px;
+}
+.phrase {
+    
+    text-align: center;
+    margin: 10px 0 50px 0;
+}
+/* pictures box */
+.box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+#pics {
+    width: 350px;
+    height: 250px;
+    overflow: hidden;
+    padding: 16px;
+}
+.nameprice {
+    padding-left: 16px;
+}
+/* end */
+
+/********** Large devices only **********/
+
+@media (min-width: 1200px) {
+    .main h1 {
+        bottom: 200px;
+    }
+    .main p {
+        bottom: 80px;
+    }
+
+}
+
+
+/********** Medium devices only **********/
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .main h1 {
+        bottom: 100px;
+    }
+    .main p {
+        bottom: 50px;
+    }
+
+}
+
+
+/********** Small devices only **********/
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .main h1 {
+        bottom: 70px;
+    }
+    .main p {
+        bottom: 20px;
+    }
+}

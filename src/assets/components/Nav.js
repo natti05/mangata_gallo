@@ -5,27 +5,58 @@ import About from '../components/About';
 import Contact from '../components/Contact';
 import Card from '../components/Cards';
 import React,{useState,useEffect} from 'react';
-import { Routes, Route, Link } from "react-router-dom";
+import { ReactComponent as Hamburger } from '../../assets/images/hamburger.svg'
+import { Routes, Route, NavLink } from "react-router-dom";
 
-export default function Nav() {
+  const Nav = () => {
+  const [showNavbar, setShowNavbar] = useState(false)
+
+  const handleShowNavbar = () => {
+    setShowNavbar(!showNavbar)
+  }
   return (
   <section>
     <header>
-      <Link to="/">
-      <div className='logo' >
-         <img src={logo} className="head-logo" alt="logo" />
+      <nav className="navbar">
+        <div className="container">
+        <NavLink to="/">
+          <div className='logo' >
+              <img src={logo} className="head-logo" alt="logo" />
+          </div>
+        </NavLink>
+        <div className="menu-icon" onClick={handleShowNavbar}>
+          <Hamburger />
+        </div>
+        <div className={`nav-elements  ${showNavbar && 'active'}`}>
+          <ul>
+            <li>
+              <NavLink class="active" to="/collection">Summer Collection</NavLink>
+            </li>
+            <li>
+            <NavLink to="/bestSellers">BestSellers</NavLink>
+            </li>
+            <li>
+            <NavLink to="/earrings">Earrings</NavLink>
+            </li>
+            <li>
+            <NavLink to="/bracelets">Bracelets</NavLink>
+            </li>
+            <li>
+            <NavLink to="/necklaces">Necklaces</NavLink>
+            </li>
+            <li>
+            <NavLink to="/rings">Rings</NavLink>
+            </li>
+            <li>
+            <NavLink to="/about">About us</NavLink>
+            </li>
+            <li>
+            <NavLink to="/contact">Contact </NavLink>
+            </li>
+          </ul>
+        </div>
       </div>
-      </Link>
-      <nav>
-      <Link to="/collection" className="nav-item">Summer Collection</Link>
-        <Link to="/bestSellers" className="nav-item">BestSellers</Link>
-        <Link to="/earrings" className="nav-item">Earrings</Link>
-        <Link to="/bracelets" className="nav-item">Bracelets</Link>
-        <Link to="/necklaces" className="nav-item">Necklaces</Link>
-        <Link to="/rings" className="nav-item">Rings</Link>
-        <Link to="/about" className="nav-item">About us</Link>
-        <Link to="/contact" className="nav-item">Contact </Link>
-      </nav>
+    </nav>
     </header>
       <Routes> 
         <Route path="/" element={<Homepage />}></Route>
@@ -42,6 +73,7 @@ export default function Nav() {
     
   );
 }
+export default Nav;
 
 function BestSellers() {
     const [data,setData]=useState([]);

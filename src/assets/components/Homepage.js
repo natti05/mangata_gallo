@@ -7,6 +7,7 @@ import pic14 from '../images/pic14.jpg';
 import pic15 from '../images/pic15.jpg';
 import picbody from '../images/picbody.jpg';
 import Card from '../components/Cards';
+import '../assets/../css/Homepage.css';
 import Flickity from 'react-flickity-component';
 import { Link } from "react-router-dom";
 import '../assets/../css/Flickity.css';
