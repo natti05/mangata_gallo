@@ -5,6 +5,17 @@
 
 .call {
     margin: 20px;
+    padding: 16px;
+    border: solid 1px darkgrey;
+    border-radius: 20px;
+}
+.call h2 {
+    padding: 8px 0px 40px 0px;
+    margin-bottom: 10px;
+}
+
+.call h2, p {
+    margin-bottom: 10px;
 }
 /* Form */
 .form {

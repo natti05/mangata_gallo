@@ -28,8 +28,9 @@ function Form () {
     }
     return (
       <div className="form">
+        <hr style={{margin: 40 }}></hr>
         <form className="" onSubmit={handleSubmit}>
-          <h1>Any question? Send us a message</h1>
+          <h1 style={{marginBottom: 20 }}><b>Any question? Send us a message</b></h1>
           <fieldset>
             <div>
               <label>Name:</label>

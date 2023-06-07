@@ -2,7 +2,7 @@ import '../assets/../css/Contact.css';
 import Feedback from '../components/Feedback';
 import Form from '../components/Form';
 import {
-    Table,Thead,Tbody,Tr,Th,Td,TableContainer,Heading,
+    Table,Thead,Tbody,Tr,Th,Td,TableContainer,
   } from '@chakra-ui/react';
 
 function Contact() {
@@ -12,9 +12,15 @@ function Contact() {
             <Feedback/>
             <Form/>
         </div>
+        <hr style={{margin: 40 }}></hr>
+        <div className='call'>
+                <h2><b>You can also reach us:</b></h2>
+                <p><b>Telephone:</b> 123 456 789</p>
+                <p><b>Address:</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
         <div className='contact'>
             <TableContainer>
-            <Heading as='h3' size='lg'>Opening Hours</Heading>
+            <h2 style={{marginBottom: 20 }}><b>Opening Hours</b></h2>
                 <Table>
                     <Thead>
                         <Tr>
@@ -42,13 +48,7 @@ function Contact() {
                     </Tbody>
                 </Table>
             </TableContainer>
-            <div className='call'>
-                <div>
-                <p><b>Telephone:</b> 123 456 789</p>
-                <p><b>Address:</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </div>
-            </div>
-        </div>    
+        </div>   
     </div>
     
     );

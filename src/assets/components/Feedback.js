@@ -20,7 +20,7 @@ function FeedbackForm({onSubmit}) {
     <div className='form'>
       <form className="feedbackbox" onSubmit={handleSubmit}>
         <fieldset>
-          <h2>Give us your Feedback</h2>
+          <h2 style={{marginBottom: 20 }}><b>Give us your Feedback</b></h2>
           <div>
             <label htmlFor="score">Score: {score} ⭐</label>
             <input
