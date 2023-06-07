@@ -1,3 +1,4 @@
+import '../assets/../css/Contact.css';
 import { useState } from "react";
 
 function FeedbackForm({onSubmit}) {
@@ -16,14 +17,13 @@ function FeedbackForm({onSubmit}) {
   };
 
   return (
-    <div>
-      <form onSubmit={handleSubmit}>
+    <div className='form'>
+      <form className="feedbackbox" onSubmit={handleSubmit}>
         <fieldset>
           <h2>Give us your Feedback</h2>
-          <div className="Field">
+          <div>
             <label htmlFor="score">Score: {score} ⭐</label>
             <input
-              id="score"
               value={score}
               onChange={(e) => {
                 setScore(e.target.value);
@@ -31,6 +31,7 @@ function FeedbackForm({onSubmit}) {
               type="range"
               min="0"
               max="10"
+              className='slider'
             />
           </div>
           <div className="Field">

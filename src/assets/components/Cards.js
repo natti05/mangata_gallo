@@ -74,8 +74,8 @@ function Card() {
   const single = photos.map((photo) =>(
     <div key={photo.id}>
       <img src={photo.image} alt="" id='pics'/>
-      <p>{photo.name}</p>
-      <b>{photo.price}</b>
+      <p className='nameprice'>{photo.name}</p>
+      <b className='nameprice'>{photo.price}</b>
    </div> 
   ))
     return (

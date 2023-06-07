@@ -77,8 +77,8 @@ function BestSellers() {
        data && data.length>0 && filtered.map((item)=>
        <div>
           <img src={`${item.url}`} alt="" id='pics'></img>
-          <p>{item.name}</p> 
-          <b>{item.price}</b>
+          <p className='nameprice'>{item.name}</p> 
+          <b className='nameprice'>{item.price}</b>
        </div>)
      }
     </div>
@@ -118,8 +118,8 @@ function Earrings() {
        data && data.length>0 && filtered.map((item)=>
        <div>
           <img src={`${item.url}`} alt="" id='pics'></img>
-          <p>{item.name}</p> 
-          <b>{item.price}</b>
+          <p className='nameprice'>{item.name}</p> 
+          <b className='nameprice'>{item.price}</b>
        </div>)
      }
     </div>
@@ -160,8 +160,8 @@ function Bracelets() {
        data && data.length>0 && filtered.map((item)=>
        <div>
           <img src={`${item.url}`} alt="" id='pics'></img>
-          <p>{item.name}</p> 
-          <b>{item.price}</b>
+          <p className='nameprice'>{item.name}</p> 
+          <b className='nameprice'>{item.price}</b>
        </div>)
      }
     </div>
@@ -201,8 +201,8 @@ function Necklaces() {
        data && data.length>0 && filtered.map((item)=>
        <div> 
           <img src={`${item.url}`} alt="" id='pics'></img>
-          <p>{item.name}</p> 
-          <b>{item.price}</b>
+          <p className='nameprice'>{item.name}</p> 
+          <b className='nameprice'>{item.price}</b>
        </div>)
      }
     </div>
@@ -242,8 +242,8 @@ function Rings() {
        data && data.length>0 && filtered.map((item)=>
        <div>
           <img src={`${item.url}`} alt="" id='pics'></img>
-          <p>{item.name}</p> 
-          <b>{item.price}</b>
+          <p className='nameprice'>{item.name}</p> 
+          <b className='nameprice'>{item.price}</b>
        </div>)
      }
     </div>

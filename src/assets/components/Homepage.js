@@ -65,9 +65,8 @@ function Homepage() {
             </p>
           </div>
         </div>
-        <h2 style={{ paddingTop: 100 }}>Summer Collection</h2>
-        <Card /> <Link to="/bestSellers" className="nav-item"><p>More:</p></Link>
-
+        <h2>Summer Collection</h2>
+        <Link to="/bestSellers" className="nav-item"><p>MORE</p></Link><Card />
       </div>
     );
 
