@@ -20,7 +20,7 @@ function Contact() {
             </div>
         <div className='contact'>
             <TableContainer>
-            <h2 style={{marginBottom: 20 }}><b>Opening Hours</b></h2>
+            <h1 style={{marginBottom: 20 }}><b>Opening Hours</b></h1>
                 <Table>
                     <Thead>
                         <Tr>
