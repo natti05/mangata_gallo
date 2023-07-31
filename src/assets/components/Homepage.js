@@ -45,11 +45,6 @@ function Homepage() {
       <div>
         <div className='main' >
           <img src={main} className="" alt="" />
-          <h1>Lorem ipsum dolor sit amet,<br/>
-              consectetur adipiscing elit, <br/>
-              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-          </h1>
-            <p>Lorem ipsum</p>
         </div>
         <div className='bestsellerbox'>
           <h2>Bestseller</h2>

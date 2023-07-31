@@ -33,25 +33,25 @@ import { Routes, Route, NavLink } from "react-router-dom";
               <NavLink class="active" to="/collection">Summer Collection</NavLink>
             </li>
             <li>
-            <NavLink to="/bestSellers">BestSellers</NavLink>
+              <NavLink to="/bestSellers">BestSellers</NavLink>
             </li>
             <li>
-            <NavLink to="/earrings">Earrings</NavLink>
+              <NavLink to="/earrings">Earrings</NavLink>
             </li>
             <li>
-            <NavLink to="/bracelets">Bracelets</NavLink>
+              <NavLink to="/bracelets">Bracelets</NavLink>
             </li>
             <li>
-            <NavLink to="/necklaces">Necklaces</NavLink>
+              <NavLink to="/necklaces">Necklaces</NavLink>
             </li>
             <li>
-            <NavLink to="/rings">Rings</NavLink>
+              <NavLink to="/rings">Rings</NavLink>
             </li>
             <li>
-            <NavLink to="/about">About us</NavLink>
+              <NavLink to="/about">About us</NavLink>
             </li>
             <li>
-            <NavLink to="/contact">Contact </NavLink>
+              <NavLink to="/contact">Contact</NavLink>
             </li>
           </ul>
         </div>
