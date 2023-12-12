@@ -1,44 +1,44 @@
 import main from '../images/pichead.jpg';
-import pic9 from '../images/pic9.jpg';
-import pic11 from '../images/pic11.jpg';
-import pic12 from '../images/pic12.jpg';
-import pic13 from '../images/pic13.jpg';
-import pic14 from '../images/pic14.jpg';
-import pic15 from '../images/pic15.jpg';
+// import pic9 from '../images/pic9.jpg';
+// import pic11 from '../images/pic11.jpg';
+// import pic12 from '../images/pic12.jpg';
+// import pic13 from '../images/pic13.jpg';
+// import pic14 from '../images/pic14.jpg';
+// import pic15 from '../images/pic15.jpg';
 import picbody from '../images/picbody.jpg';
 import Card from '../components/Cards';
 import '../assets/../css/Homepage.css';
-import Flickity from 'react-flickity-component';
+// import Flickity from 'react-flickity-component';
 import { Link } from "react-router-dom";
 import '../assets/../css/Flickity.css';
 
 
-const flickityOptions = {
-  initialIndex: 4,
-  autoPlay: 1500,
-  wrapAround: true,
-}
+// const flickityOptions = {
+//   initialIndex: 4,
+//   autoPlay: 1500,
+//   wrapAround: true,
+// }
 
-function Carousel() {
-  return (
-    <Flickity
-      className={'carousel'} // default ''
-      elementType={'div'} // default 'div'
-      options={flickityOptions} // takes flickity options {}
-      disableImagesLoaded={false} // default false
-      reloadOnUpdate // default false
-      static // default false
+// function Carousel() {
+//   return (
+//     <Flickity
+//       className={'carousel'} // default ''
+//       elementType={'div'} // default 'div'
+//       options={flickityOptions} // takes flickity options {}
+//       disableImagesLoaded={false} // default false
+//       reloadOnUpdate // default false
+//       static // default false
 
-    >
-      <img src={pic9} alt='' id='carouselimg'/>
-      <img src={pic11} alt=''id='carouselimg'/>
-      <img src={pic12} alt=''id='carouselimg'/>
-      <img src={pic13} alt=''id='carouselimg'/>
-      <img src={pic14} alt=''id='carouselimg'/>
-      <img src={pic15} alt=''id='carouselimg'/>
-    </Flickity>
-  )
-};
+//     >
+//       <img src={pic9} alt='' id='carouselimg'/>
+//       <img src={pic11} alt=''id='carouselimg'/>
+//       <img src={pic12} alt=''id='carouselimg'/>
+//       <img src={pic13} alt=''id='carouselimg'/>
+//       <img src={pic14} alt=''id='carouselimg'/>
+//       <img src={pic15} alt=''id='carouselimg'/>
+//     </Flickity>
+//   )
+// };
 
 function Homepage() {
     return (
@@ -48,7 +48,7 @@ function Homepage() {
         </div>
         <div className='bestsellerbox'>
           <h2>Bestseller</h2>
-          <Carousel />
+          {/* <Carousel /> */}
         </div>
         <div className='boxpage'>
           <div>
