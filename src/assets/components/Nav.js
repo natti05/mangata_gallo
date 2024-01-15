@@ -8,11 +8,6 @@ import {BestSellers, Earrings, Bracelets, Necklaces, Rings} from '../components/
 import React,{useState} from 'react';
 import { ReactComponent as Hamburger } from '../../assets/images/hamburger.svg'
 import { Routes, Route, NavLink } from "react-router-dom";
-import { BestSellers} from '../components/Navtab';
-import { Earrings} from '../components/Navtab';
-import { Bracelets} from '../components/Navtab';
-import { Necklaces} from '../components/Navtab';
-import { Rings} from '../components/Navtab';
 
   const Nav = () => {
   const [showNavbar, setShowNavbar] = useState(false)
